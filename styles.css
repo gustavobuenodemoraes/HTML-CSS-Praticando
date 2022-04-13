@@ -8,9 +8,29 @@
 body {
   background-color: var(--cor-de-fundo);
   color: var(--branco-principal);
-}`
+}
 
 * {
   margin: 0;
   padding: 0;
+}
+
+.principal{
+  background-image: url(img/Background.png);
+  background-repeat: no-repeat;
+  /* pega todo o container */
+  background-size: contain;
+}
+
+.container {
+  /* altura da pagina está em 100% */
+   height: 100vh; 
+}
+
+.container__botao{
+  color: var(--branco-principal);
+  background-color: var(--botao-azul);
+  border-radius: 5px;
+  display: block;
+  padding: 1em;
 }
