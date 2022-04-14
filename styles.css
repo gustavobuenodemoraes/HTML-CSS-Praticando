@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 :root {
   --branco-principal: #ffffff;
   --cinza-secundario: #c0c0c0;
   --botao-azul: #167BF7;
   --cor-de-fundo: #00030C;
+  --fonte-principal: 'Inter', sans-serif;
 }
 
 body {
   background-color: var(--cor-de-fundo);
   color: var(--branco-principal);
+  font-family: --fonte-principal;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 * {
@@ -15,7 +20,7 @@ body {
   padding: 0;
 }
 
-.principal{
+.principal {
   background-image: url(img/Background.png);
   background-repeat: no-repeat;
   /* pega todo o container */
@@ -24,13 +29,31 @@ body {
 
 .container {
   /* altura da pagina está em 100% */
-   height: 100vh; 
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-.container__botao{
+.container__botao {
   color: var(--branco-principal);
-  background-color: var(--botao-azul);
   border-radius: 5px;
-  display: block;
   padding: 1em;
+  background-color: var(--botao-azul);
+  display: block;
+  text-decoration: none;
+}
+
+.botao_secundario {
+  background-color: transparent;
+  border: 2px solid var(--branco-principal);
+}
+
+.container__aviso{
+  font-size: 12px;
+  color: var(--cinza-secundario);
+}
+
+.container__titolo{
+  font-size: 28px;
+  font-weight: 800;
 }
