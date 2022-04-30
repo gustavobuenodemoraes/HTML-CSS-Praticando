@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 
 :root {
   --branco-principal: #ffffff;
   --cinza-secundario: #c0c0c0;
-  --botao-azul: #167BF7;
-  --cor-de-fundo: #00030C;
-  --fonte-principal: 'Inter', sans-serif;
+  --botao-azul: #167bf7;
+  --cor-de-fundo: #00030c;
+  --fonte-principal: "Inter", sans-serif;
 }
 
 body {
@@ -118,4 +118,36 @@ body {
 .lista__item {
   font-size: 32px;
   color: var(--branco-principal);
+}
+
+.rodape {
+  text-align: center;
+}
+
+.rodape__lista {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 5em;
+  list-style-type: none;
+}
+
+.lista__link a {
+  color: var(--branco-principal);
+  text-decoration: none;
+  font-size: 16px;
+  text-decoration: none
+}
+
+.rodape__texto{
+  color: var(--cinza-secundario);
+  margin: 2em 3em;
+  font-size: 14px;
+}
+
+.lista__link a:hover{
+  color: var(--cinza-secundario);
+}
+
+.lista__link a:active{
+  color: var(--botao-azul);
 }
