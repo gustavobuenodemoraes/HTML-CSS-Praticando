@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
 :root {
   --branco-principal: #ffffff;
   --cinza-secundario: #c0c0c0;
@@ -10,7 +11,7 @@
 body {
   background-color: var(--cor-de-fundo);
   color: var(--branco-principal);
-  font-family: --fonte-principal;
+  font-family: var(--fonte-principal);
   font-size: 16px;
   font-weight: 400;
 }
@@ -25,6 +26,8 @@ body {
   background-repeat: no-repeat;
   /* pega todo o container */
   background-size: contain;
+  align-items: center;
+  text-align: center;
 }
 
 .container {
@@ -41,6 +44,7 @@ body {
   background-color: var(--botao-azul);
   display: block;
   text-decoration: none;
+  margin-bottom: 1em;
 }
 
 .botao_secundario {
@@ -48,12 +52,70 @@ body {
   border: 2px solid var(--branco-principal);
 }
 
-.container__aviso{
+.container__aviso {
   font-size: 12px;
   color: var(--cinza-secundario);
 }
 
-.container__titolo{
+.container__titolo {
   font-size: 28px;
   font-weight: 800;
+}
+
+.container__imagem {
+  margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+  margin: 0 6em;
+}
+
+.secundario__imagem {
+  width: 80%;
+}
+
+.secundario {
+  align-items: center;
+  margin: 0 10em;
+}
+
+.descricao__titulo {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--branco-principal);
+  margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+  color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.container__descricao {
+  padding: 2em;
+}
+
+.dispositivos__lista {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 5em 0;
+}
+
+.dispositivos {
+  text-align: center;
+}
+
+.dispositivos__titulo {
+  font-size: 48px;
+  color: var(--branco-principal);
+}
+
+.lista__item {
+  font-size: 32px;
+  color: var(--branco-principal);
 }
